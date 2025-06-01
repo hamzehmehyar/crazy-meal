@@ -1,0 +1,368 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html , body {
+
+    min-height: 100vh;
+
+}
+
+#resturantName {
+
+    font-family:"Caveat Brush", cursive;
+    padding: 12px;
+
+}
+
+body {
+
+    background: #782cab;
+    background: linear-gradient(121deg, rgba(120, 44, 171, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Inter", sans-serif;
+    
+
+}
+
+header {
+
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+header nav {
+
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+
+}
+
+header nav a {
+
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+header nav span {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 146px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919 , #ff3333);
+    border-radius: 8px;
+    transition: .5s;
+
+}
+
+header nav a:nth-child(1):hover~span {
+
+    left: 0;
+
+}
+
+header nav a:nth-child(2):hover~span {
+
+    left: 146px;
+
+}
+
+
+input {
+
+    width: 100%;
+    padding: 5px;
+    margin: 12px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+
+}
+
+#mealsForm {
+
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 500px;
+    padding: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    
+}
+
+#mealsForm:hover {
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.10);
+
+}
+
+
+#mealsForm button {
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+
+}
+
+#mealsForm button::after {
+
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+
+}
+
+#mealsForm button::before {
+
+    content: "";
+    background: linear-gradient(
+
+        45deg,
+        #ff0000 , #ff7300 , #fffb00 , #48ff00 , 
+        #00ffd5 , #002bff , #ff00c8 , #ff0000
+
+    );
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+
+}
+
+#mealsForm button:hover::before {
+
+    opacity: 1;
+
+
+}
+
+@keyframes glowing {
+
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+
+}
+
+.addContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+#mealOrdersHeader {
+
+    text-align: center;
+    margin-top: 19px;
+
+}
+
+.mealsContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    margin-bottom: 30px;
+
+}
+
+#orderList {
+
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#orderList li {
+
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: 5px solid #ff3333;
+    border-radius: 8px;
+    padding: 15px 168px;
+    box-shadow: 2px 2px 8px rgba(0 , 0 , 0 , 0.1);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.2s ease;
+
+}
+
+#orderList li:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 2px 4px 10px rgba(0 , 0 , 0 , 0.15);
+
+}
+
+.meal-img {
+
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: -11px 0;
+    margin-left: -156px;
+
+}
+
+.mealContent {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mealInfo {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.textInfo {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.deleteMealButton {
+
+    padding: 6px 12px;
+    background-color: #ff3333;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.deleteMealButton:hover {
+
+    background-color: #cc0000;
+
+}
+
+footer p {
+
+    padding: 6px;
+
+}
+
+.cardsContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.card {
+
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0 , 0 , 0 , 0.2);
+    background: #fff;
+    transition: 0.3s
+
+}
+
+.card:hover {
+
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+
+}
+
+.card img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.container {
+
+    padding: 15px;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy meal</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300.
+.700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,
+opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+ rel="stylesheet">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comfortaa:wght@300..
+700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14.
+.32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1 id="resturantName">Crazy meal</h1>
+
+    <header>
+
+        <nav>
+
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+
+            <span></span>
+
+        </nav>
+
+    </header>
+
+    <div class="addContainer">
+
+    <form id="mealsForm">
+
+        <label for="name">Meal name :</label>
+        <input type="text" id="name"/>
+
+
+        <label for="price">price :</label>
+        <input type="number" id="price"/>
+
+        <label for="image">Meal image</label>
+        <input type="url" id="image"/>
+
+        <div class="buttons">
+
+        <button type="submit">Add meal</button>
+        <button type="button" id="clearButton">Clear all</button>
+
+        </div>
+
+        
+    </form>
+
+    </div>
+
+    <h2 id="mealOrdersHeader">Meal orders</h2>
+
+    <div class="mealsContainer">
+
+    <ul id="orderList"></ul>
+
+    </div>
+
+    <footer>
+
+        <p>2025 Hamzeh Mehyar. All rights reserved.</p>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
