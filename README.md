@@ -10,6 +10,6 @@
 
 https://hamzehmehyar.github.io/crazy-meal/index.html
 
-- you can add this link to test the meals list to put in the image field
+- you can add this link to test the meals list to put in the image field:
 
 https://i.postimg.cc/Twgn6NcT/burger-meal.jpg
