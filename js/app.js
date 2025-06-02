@@ -49,6 +49,7 @@ type a name , the browser will give him an alert that says please enter the meal
         return;
 
     }
+    
 
 //here we push the added meal to the array that we defined or initialized before     
     mealsArr.push(newOrder);
